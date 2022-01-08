@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+.App .background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.App .background-image .background-color {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.App .background-image .background-color-gradient {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(4, 136, 245);
+  background: linear-gradient(
+    235deg,
+    rgba(4, 136, 245, 0.6) 0%,
+    rgba(233, 19, 19, 0.6) 100%
+  );
+}
+
+.App .background-image img {
+  width: 100%;
+}
+
+.App .main-container {
+  width: 50%;
+  margin: auto;
+  color: white;
+}
+
+.App .main-container .game-header {
+  width: 100%;
+  background-image: url(../public/images/header-background.jpg);
+  border: 2px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.App .main-container .game-header h2 {
+  margin: 0;
+}
+
+.App .main-container .not-matched {
+  cursor: pointer;
+  /* transition: all 0.5s ease; */
+}
+
+.App .main-container .not-matched:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 850px) {
+  .App .main-container {
+    width: 90%;
+  }
+}
