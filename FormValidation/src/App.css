@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-color:#03a9f4;
+  background-size: cover;
+  background-position:center;
+}
+form{
+  background-color: white;
+  padding: 0px 60px;
+  border-radius: 10px;
+}
+h1{
+  text-align: center;
+  padding:10px;
+  color: rgb(77, 76, 76);
+  font-size: 25px;
+}
+button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background-color: #03a9f4;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  transition: 0.35s ease-in-out;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -ms-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+}
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+}
+button:before {
+  top: -5px;
+  left: 0;
+  background-color: inherit;
+  transition: 0.35s ease-in-out;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -ms-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+}
+button:after {
+  bottom: -5px;
+  right: 0;
+  background-color: inherit;
+  transition: 0.35s ease-in-out;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -ms-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+}
+button:hover {
+  width: 100%;
+  background-color: #007ac1;
+}
+button:hover::before,
+button:hover::after {
+  width: 100%;
+}
