@@ -28,3 +28,23 @@ nav {
   color: rgb(100, 100, 100);
   margin-bottom: 10px;
 }
+
+.post-author {
+  color: rgb(136, 136, 136);
+  font-style: italic;
+}
+
+.post-img {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.post-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.post-content {
+  font-size: 1.2rem;
+  color: rgb(100, 100, 100);
+}

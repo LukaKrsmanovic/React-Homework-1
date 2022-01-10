@@ -1,7 +1,17 @@
 import React from "react";
 
-const Post = () => {
-  return <div>Neki Post tekst</div>;
+const Post = (props) => {
+  props = props.history.location.postInfo;
+  return (
+    <div>
+      <h1>{props.title}</h1>
+      <div className="post-author">Author: {props.author}</div>
+      <div className="post-img center">
+        <img src={props.image_url} alt="post image" />
+      </div>
+      <p className="post-content">{props.content}</p>
+    </div>
+  );
 };
 
 export default Post;
