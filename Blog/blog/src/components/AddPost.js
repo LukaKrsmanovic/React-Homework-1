@@ -53,6 +53,7 @@ export const AddPost = () => {
             type="text"
             placeholder="Title"
             className="form-control"
+            maxlength="20"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
@@ -62,6 +63,7 @@ export const AddPost = () => {
             type="author"
             placeholder="Author"
             className="form-control"
+            maxlength="20"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
@@ -70,6 +72,7 @@ export const AddPost = () => {
           <textarea
             placeholder="Post content"
             className="form-control newPostContent"
+            maxlength="250"
             value={content}
             onChange={(e) => setContent(e.target.value)}
           ></textarea>
