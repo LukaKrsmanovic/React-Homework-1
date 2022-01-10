@@ -19,10 +19,6 @@ nav {
   margin-bottom: 50px;
 }
 
-nav ul .btn {
-  text-transform: initial;
-}
-
 .card .meta {
   margin-bottom: 10px;
 }
@@ -53,9 +49,15 @@ nav ul .btn {
   color: rgb(100, 100, 100);
 }
 
-@media screen and (max-width: 750px) {
-  nav ul .btn {
-    font-size: 0.8rem;
-    padding: 0 7px;
-  }
+.form-control{
+  padding:11px;
+  margin:8px 0;
+}
+
+.newPostContent{
+  height: 125px;
+}
+
+.btn{
+  width: 100%;
 }
