@@ -17,6 +17,7 @@ class Home extends React.Component {
 
   getPosts = () => {
     let posts = this.state.posts;
+    posts.reverse();
     return posts.map((post) => {
       return <PostCard postInfo={post} key={post.id}></PostCard>;
     });
