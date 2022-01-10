@@ -10,7 +10,7 @@ const NavBar = () => {
             <img src="./images/blog-logo.png" alt="logo" width="100%" />
           </div>
         </Link>
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
+        <ul id="nav-mobile" className="right">
           <li>
             <Link to="/add-post" className="waves-effect waves-light blue btn">
               Dodaj post
